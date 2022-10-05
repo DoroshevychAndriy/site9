@@ -1,0 +1,196 @@
+.blogs-best {
+    padding: 0px 9% 90px 9%;
+    @media screen and(max-width:$tabbig){
+        padding: 0px 7% 90px 9%;
+    }
+    @media screen and(max-width:$tablet){
+        padding: 0px 2% 90px 2%;
+    }
+    @media screen and(max-width:$mobile){
+        padding: 0;
+    }
+    &__title {
+        padding-top: 88px;
+    }
+    &__subtitle {
+        padding-bottom: 70px;
+    }
+}
+.blog-card {
+    display: flex;
+    width: 100%;
+    height: 370px;
+    background: #231F20;
+    @media screen and(max-width:$tablet){
+        flex-direction: column;
+        height: 1000px;
+    }
+    @media screen and(max-width:$mobile){
+        height: 672px;
+    }
+    &__img {
+        background-image: url(../img/best1.jpg);
+        width: 30%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media screen and(max-width:$tabbig){
+            width: 70%;
+        }
+        @media screen and(max-width:$tablet){
+            width: 100%;
+            height: 60%;
+        }
+        @media screen and(max-width:$mobile){
+            height: 86%;
+        }
+    }
+    &__container {
+        padding: 63px 0 50px 80px;
+        @media screen and(max-width:$tablet){
+            height: 400px;
+            padding: 63px 0 50px 45px;
+        }
+        @media screen and(max-width:$mobile){
+            padding: 30px 0 30px 30px;
+        }
+    }
+    &__content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @media screen and(max-width:$tablet){
+            width: 87%;
+        }
+    }
+    &__content-author {
+        font-size: 14px;
+        line-height: 140.62%;
+        color: #FFFFFF;
+        @media screen and(max-width:$tablet){
+            font-size: 20px;
+        }
+    }
+    &__content-title {
+        width: 99%;
+        font-size: 48px;
+        line-height: 58px;
+        color: #FFFFFF;
+        @media screen and(max-width:$mobile){
+            font-size: 35px;
+            line-height: 36px;
+            color: #FFFFFF;
+        }
+    }
+    &__content-link {
+        font-size: 18px;
+        line-height: 140.62%;
+        color: #FFFFFF;
+        @media screen and(max-width:$tablet){
+            font-size: 20px;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+
+    }
+}
+
+
+
+.blog__group {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0 80px 0;
+    gap: 30px;
+    @media screen and(max-width:$tabbig){
+        gap: 10px;
+    }
+    @media screen and(max-width:$tablet){
+        flex-direction: column;
+    }
+    @media screen and(max-width:$mobile){
+        gap: 20px;
+        align-items: center;
+    }
+    &-items {
+        width: 50%;
+        line-height: 140.62%;
+        color: #000000;
+        background: #FFFFFF;
+        height: 290px;
+        &:hover{
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+        }
+        @media screen and(max-width:$tablet){
+            width: 100%;
+        }
+    }
+    &-item__title {
+        font-size: 24px;
+        line-height: 140.62%;
+        color: #000000;
+        @media screen and(max-width:$tabbig){
+            font-size: 22px;
+        }
+        @media screen and(max-width:$mobile){
+            text-align: center;
+        }
+    }
+    &-item__subtitle {
+        width: 70%;
+        font-size: 18px;
+        line-height: 140.62%;
+        color: #000000;
+        @media screen and(max-width:$mobile){
+            text-align: center;
+            width: 100%;
+        }
+    }
+    &-item__link {
+        font-size: 14px;
+        line-height: 140.62%;
+        color: #000000;
+        &:hover{
+            text-decoration: underline;
+        }
+        @media screen and(max-width:$mobile){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            padding-bottom: 15px;
+        }
+    }
+    &-item {
+        background: #FFFFFF;
+        width: 50%;
+        height: 290px;
+        @media screen and(max-width:$tablet){
+            width: 100%;
+        }
+        &:hover{
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+        }
+    }
+}
+.blog__group-item,.blog__group-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 50px;
+    @media screen and(max-width:$tabbig){
+        padding: 0px;
+    }
+    @media screen and(max-width:$burger){
+        padding: 25px 0 0 10px;
+    }
+    @media screen and(max-width:$mobile){
+        width: 95%;
+        padding: 25px 0 0 0px;
+    }
+}
+
+

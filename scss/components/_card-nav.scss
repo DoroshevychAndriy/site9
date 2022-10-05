@@ -1,0 +1,105 @@
+.card-nav {
+    background: #F7941E;
+    display: flex;
+    width: 100%;
+    height: 240px;
+    @media screen and(max-width:$burger){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 385px;
+        gap: 35px;
+    }
+    &__title {
+        font-size: 32px;
+        line-height: 140.62%;
+        color: #000000;
+        font-weight: 700;
+    }
+    &__text {
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        @media screen and(max-width:$burger){
+            width: 100%;
+        }
+    }
+    &__subtitle {
+        font-size: 32px;
+        line-height: 140.62%;
+        color: #000000;
+        flex-wrap: wrap;
+    }
+    &__btn {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media screen and(max-width:$tablet){
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    &__btn-start {
+        background: #F7941E;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-text{
+            font-size: 18px;
+            line-height: 134.77%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+    &__btn-end {
+        background: #F7941E;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-text{
+            font-size: 18px;
+            line-height: 134.77%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+    &__btn-start:hover{
+        background: #231F20;
+        border-radius: 5px;
+        &:hover .card-nav__btn-start-text{
+            line-height: 22px;
+            display: flex;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    &__btn-end:hover{
+        background: #231F20;
+        border-radius: 5px;
+        &:hover .card-nav__btn-end-text{
+            line-height: 22px;
+            display: flex;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+.button {
+}

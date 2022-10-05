@@ -1,0 +1,36 @@
+.header__btn {
+    @media screen and(max-width:$burger){
+        display: none;
+    }
+    &:hover{
+        background: #ce7409;
+    }
+}
+.button {
+    border: 1px solid #F7941E;
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    @media screen and(max-width: $tablet){
+        width: 120px;
+        height: 38px;
+    }
+
+}
+.header__btn-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F7941E;
+    @media screen and(max-width: $tablet){
+        font-size: 16px;
+    }
+    &:hover{
+        color: #fafafa;
+    }
+}
